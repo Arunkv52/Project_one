@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul.tabstop-head li {
+    list-style: none;
+}
+input#firstname, #lastname, #email, #mobilenum {
+
+    width: 30%;
+    padding: 8px;
+}
+#carmodel, #selectlocation {
+    width: 60%;
+    padding: 8px;
+}
+#form-submission {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 9px 50px;
+}

@@ -1,0 +1,222 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isuzu India - Sales Enquiry</title>
+    <!--Favicons -->
+    <link rel="shortcut icon" href="images/Logo/Isuzu_512x512.png" type="image/x-icon">
+
+    <!--------Bootstrap Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!----------Google Fonts------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-------Fontawesome cdn links-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!------animate on scroll library css cdn----->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-------Css Connection----->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- captacha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+   
+
+
+</head>
+
+<body>
+
+    <!---section top banner start---->
+    <section class="test-top">
+        <div class="container-fluid testtop-ban">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 testban-right">
+                    <img src="images/connecttoservice/1920-x-700_02.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section end banner end-->
+
+
+    <!------form section start---->
+    <section class="testform-top">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center pt-5 pb-5">
+                    <h3 class="fw-bold">ISUZU’s globally proven Pickups & SUV – ‘Made in India’ for India</h3>
+                    <!----tabs--->
+                    <ul class="tabstop-head pt-5 pb-5">
+                        <li>Sales Enquiry</li>
+                    </ul>
+                    <!----form control---->
+                    <form action="send-enquiry.php" method="POST">
+                        <!-- form name -->  
+                        <div class="form-name pt-4">
+                            <label for="firstname"></label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Enter First Name"
+                                maxlength="20" required>
+                            <label for="lastname"></label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name"
+                                maxlength="20" required>
+                        </div>
+                        <!-- form email -->
+                        <div class="form-mail pt-5">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email id" required>
+                            <!-- mobile num -->
+                            <label for="mobilenum"></label>
+                            <input type="tel" name="mobilenum" id="mobilenum" placeholder="Enter Mobile Number"
+                                minlength="10" maxlength="10" required>
+                        </div>
+                        <!-- select model -->
+                        <div class="select-model pt-5">
+                            <select name="carmodel" id="carmodel" required>
+                                <option value="">Please Select Model</option>
+                                <option value="mu-X">mu-X</option>
+                                <option value="Hi-Lander">Hi-Lander</option>
+                                <option value="D-MAX">D-MAX</option>
+                                <option value="S-CAB">S-CAB</option>
+                                <option value="V-Cross">V-Cross</option>
+                            </select>
+                        </div>
+                        <!-- select Location -->
+                        <div class="preferred-location pt-5">
+                            <select name="selectlocation" id="selectlocation" required>
+                                <option value="">Preferred Location</option>
+                                <!-- Punjab -->
+                                    <option value="Mohali">Mohali</option>
+                                    <option value="Ludhiana">Ludhiana</option>
+                                    <option value="Jalandhar">Jalandhar</option>
+                                    <option value="Mandi 2S">Mandi 2S</option>
+                                <!-- Haryana / NCR -->
+                                    <option value="Gurgaon">Gurgaon</option>
+                                    <option value="Delhi 2S">Delhi 2S</option>
+                                    <option value="Faridabad">Faridabad</option>
+                                <!-- jaipur -->
+                                    <option value="Jaipur">Jaipur</option>
+                                <!-- Lucknow -->
+                                    <option value="Lucknow">Lucknow</option>
+                                <!-- Gorakhpur -->
+                                    <option value="Gorakhpur">Gorakhpur</option>
+                                <!-- Chhattisgarh -->
+                                    <option value="Raipur">Raipur</option>
+                                    <option value="Ambikapur">Ambikapur</option>
+                                <!-- Siliguri -->
+                                    <option value="Siliguri">Siliguri</option>
+                                <!-- Dimapur/ Nagaland -->
+                                    <option value="Dimapur">Dimapur</option>
+                                <!-- Gujarat & Jodhpur (Rajasthan) -->
+                                    <option value="Ahmedabad 1">Ahmedabad 1</option>
+                                    <option value="Ahmedabad 2 - Narol">Ahmedabad 2 - Narol</option>
+                                    <option value="Mehsana">Mehsana</option>
+                                    <option value="Bhuj">Bhuj</option>
+                                    <option value="Gandhidham">Gandhidham</option>
+                                    <option value="Rajkot">Rajkot</option>
+                                    <option value="Surat">Surat</option>
+                                    <option value="Vadodara">Vadodara</option>
+                                    <option value="Jodhpur">Jodhpur</option>
+                                <!-- Maharashtra/Navi Mumbai -->
+                                    <option value="Navi Mumbai">Navi Mumbai</option>
+                                <!-- Maharashtra/Pune -->
+                                    <option value="Pune">Pune</option>
+                                <!-- Maharashtra/Nagpur -->
+                                    <option value="Nagpur">Nagpur</option>
+                                <!-- AP/Telangana/Hyderabad -->
+                                    <option value="Hyderabad 1">Hyderabad 1</option>
+                                    <option value="Hyderabad 2">Hyderabad 2</option>
+                                    <option value="Vijayawada">Vijayawada</option>
+                                    <option value="Bhimavaram">Bhimavaram</option>
+                                    <option value="Rajahmundry">Rajahmundry</option>
+                                    <option value="Vizag">Vizag</option>
+                                    <option value="Tirupati">Tirupati</option>
+                                    <option value="Nellore">Nellore</option>
+                                    <option value="Kurnool">Kurnool</option>
+                                <!-- TN/Chennai -->
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Coimbatore">Coimbatore</option>
+                                    <option value="Madurai">Madurai</option>
+                                <!-- Karnataka -->
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Mangalore">Mangalore</option>
+                                <!-- Kerala -->
+                                    <option value="Calicut">Calicut</option>
+                                    <option value="Cochin">Cochin</option>
+                                    <option value="Perumbavoor">Perumbavoor</option>
+                                    <option value="Trivandrum">Trivandrum</option>
+                                    <option value="Pathnamthitta">Pathnamthitta</option>
+                                <!-- MP/Indore -->
+                                    <option value="Indore">Indore</option>
+                            </select>
+                        </div>
+                        <!-- checkbox -->
+                        <div class="boxcheck pt-5 text-left">
+                            <input type="checkbox" name="checkbox" id="checkbox" required>
+                            <label for="checkbox">By clicking on the send button below, I hereby agree to get updates
+                                from Isuzu Motors India.</label>
+                        </div>
+                        <!-- captacha -->
+                        <div class="caprect text-center pt-5">
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        </div>
+                        <!-- form submission -->
+                        <div class="form-submission pt-5">
+                            <button type="submit" value="submit" id="form-submission">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----form section end------>
+
+  
+
+
+
+
+    <!-------javscript links------>
+    <script src="Javscript/style.js"></script>
+
+    <!------Bootstrap js Links------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+        <!-------Animate on scroll library js cdn--------->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+
+
+</body>
+
+</html>
